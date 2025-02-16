@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+
+  <link rel="icon" type="image/png" href="Main Web Iconn.png">
   <title>เว็บไซต์สาขามัลติมีเดีย</title>
 
   <style>
@@ -39,8 +41,10 @@
     }
 
     .member-card img:hover {
-      transform: translateY(-10px); /* ทำให้ภาพลอยขึ้น 10px */
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ดูนูนขึ้น */
+      transform: translateY(-10px);
+      /* ทำให้ภาพลอยขึ้น 10px */
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+      /* เพิ่มเงาให้ดูนูนขึ้น */
     }
 
     .btn {
@@ -76,6 +80,22 @@
       /* จัดเมนูไปทางขวา */
     }
 
+    .navbar-nav .nav-item .nav-link {
+      position: relative;
+      padding: 9px 7.5px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      /* กรอบสีขาวจาง */
+      padding: 5px 10px;
+      border-radius: 10px;
+      /* ค่อยๆ เปลี่ยนจากเหลี่ยมเป็นโค้ง */
+      background-color: white;
+    }
+
     @media (max-width: 991px) {
 
       /* สำหรับจอเล็ก */
@@ -104,6 +124,21 @@
 
     p {
       font-family: "Itim", serif;
+    }
+
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      /* 4 คอลัมน์เท่ากัน */
+      background-color: #ffedd5;
+      color: rgb(0, 0, 0);
+      padding: 15px 0;
+      font-family: "Itim", serif;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
@@ -208,6 +243,7 @@
           </div>
 
 
+
           <!-- ปุ่มเลื่อนซ้าย-ขวา -->
           <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -268,7 +304,7 @@
       </div>
 
 
-      <div class= "col-md-6">
+      <div class="col-md-6">
         <div class="h-100 p-5 border rounded-3">
           <h2>ช่องทางโซเชียลมีเดียสาขา MMT</h2>
           <!-- Facebook Icon -->
@@ -290,9 +326,27 @@
       </div>
 
     </div>
+    <br>
+    <br>
   </main>
 
-  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <footer class="footer">
+    <div class="footer-item">© 2025 สาขาวิชาเทคโนโลยีมัลติมีเดีย มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ</div>
+  </footer>
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js">
+
+    document.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("mouseenter", function () {
+        this.style.borderRadius = "10px"; // ค่อยๆ ทำให้โค้งมน
+      });
+      link.addEventListener("mouseleave", function () {
+        this.style.borderRadius = "5px"; // กลับไปเป็นเหลี่ยมเล็กน้อย
+      });
+    });
+
+
+  </script>
 
   </body>
 

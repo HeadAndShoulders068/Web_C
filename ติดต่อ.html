@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+
+    <link rel="icon" type="image/png" href="Main Web Iconn.png">
     <title>เว็บไซต์สาขามัลติมีเดีย</title>
 
     <style>
@@ -177,6 +179,22 @@
             /* จัดเมนูไปทางขวา */
         }
 
+        .navbar-nav .nav-item .nav-link {
+            position: relative;
+            padding: 9px 7.5px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            /* กรอบสีขาวจาง */
+            padding: 5px 10px;
+            border-radius: 10px;
+            /* ค่อยๆ เปลี่ยนจากเหลี่ยมเป็นโค้ง */
+            background-color: white;
+        }
+
         @media (max-width: 991px) {
 
             /* สำหรับจอเล็ก */
@@ -190,9 +208,25 @@
             padding-top: 70px;
             /* ป้องกันเนื้อหาถูก navbar บัง */
         }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            /* 4 คอลัมน์เท่ากัน */
+            background-color: #ffedd5;
+            color: rgb(0, 0, 0);
+            padding: 15px 0;
+            font-family: "Itim", serif;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
     </style>
 
 </head>
+
 
 <div class="container">
     <nav class="navbar navbar-expand-lg rounded" aria-label="Eleventh navbar example">
@@ -248,17 +282,20 @@
                     ต.หันตรา อ.พระนครศรีอยุธยา จ.พระนครศรีอยุธยา 13000 <br>
                     <br>
                     &nbsp; - ช่องทางติดต่อ
-                        <img src="Phone Icon.png" style="width: 2.2rem;" class="social-icon" alt="Facebook Logo"></a>
-                        โทรศัพท์ : 092-2630-007
+                    <img src="Phone Icon.png" style="width: 2.2rem;" class="social-icon" alt="Facebook Logo"></a>
+                    โทรศัพท์ : 092-2630-007
                     <br><br>
-                    &nbsp; - ช่องทางติดต่อ 
+                    &nbsp; - ช่องทางติดต่อ
                     <a href=https://www.facebook.com/SCI.RMUTSB/?locale=th_TH class="icon-box" target="_blank">
                         <img src="Facebook Icon.png" style="width: 2.5rem;" class="social-icon" alt="Facebook Logo"></a>
-                        Page Facebook : คณะวิทยาศาสตร์และเทคโนโลยี RUS
+                    Page Facebook : คณะวิทยาศาสตร์และเทคโนโลยี RUS
                     <br><br>
-                    &nbsp; &nbsp;- ติดต่อแบบ Walk In <a href=https://www.google.com/maps?ll=14.377025,100.603952&z=17&t=h&hl=th&gl=US&mapclient=embed&cid=9808925650973634467 class="icon-box" target="_blank">
-                        <img src="Google Map Icon.png" style="width: 1.5rem;" class="social-icon" alt="Facebook Logo"></a>
-                        Google Map : อาคาร 23 คณะวิทยาศาสตร์และเทคโนโลยี RUS
+                    &nbsp; &nbsp;- ติดต่อแบบ Walk In <a
+                        href=https://www.google.com/maps?ll=14.377025,100.603952&z=17&t=h&hl=th&gl=US&mapclient=embed&cid=9808925650973634467
+                        class="icon-box" target="_blank">
+                        <img src="Google Map Icon.png" style="width: 1.5rem;" class="social-icon"
+                            alt="Facebook Logo"></a>
+                    Google Map : อาคาร 23 คณะวิทยาศาสตร์และเทคโนโลยี RUS
                     <br><br>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1631.5429784543871!2d100.60368168625034!3d14.37667221671739!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2750057b76311%3A0x88204de8de802fa3!2z4Liq4Liy4LiC4Liy4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lih4Lix4Lil4LiV4Li04Lih4Li14LmA4LiU4Li14LiiIOC4oeC4l-C4oy7guKrguLjguKfguKPguKPguJPguKDguLnguKHguLQg4Lie4Lij4Liw4LiZ4LiE4Lij4Lio4Lij4Li14Lit4Lii4Li44LiY4Lii4Liy4Lir4Lix4LiZ4LiV4Lij4Liy!5e1!3m2!1sth!2sus!4v1739690771389!5m2!1sth!2sus"
@@ -269,12 +306,32 @@
             </div>
         </div>
         <br>
+        <br>
     </body>
 </div>
 
 </main>
 
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<div class="container">
+    <footer class="footer">
+        <div class="footer-item">© 2025 สาขาวิชาเทคโนโลยีมัลติมีเดีย มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ</div>
+    </footer>
+</div>
+
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js">
+
+    document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("mouseenter", function () {
+            this.style.borderRadius = "10px"; // ค่อยๆ ทำให้โค้งมน
+        });
+        link.addEventListener("mouseleave", function () {
+            this.style.borderRadius = "5px"; // กลับไปเป็นเหลี่ยมเล็กน้อย
+        });
+    });
+
+
+</script>
 
 </body>
 

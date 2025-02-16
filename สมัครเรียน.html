@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+
+  <link rel="icon" type="image/png" href="Main Web Iconn.png">
   <title>เว็บไซต์สาขามัลติมีเดีย</title>
 
 
@@ -189,6 +191,37 @@
       padding-top: 70px;
       /* ป้องกันเนื้อหาถูก navbar บัง */
     }
+
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      /* 4 คอลัมน์เท่ากัน */
+      background-color: #ffedd5;
+      color: rgb(0, 0, 0);
+      padding: 15px 0;
+      font-family: "Itim", serif;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      position: relative;
+      padding: 9px 7.5px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      /* กรอบสีขาวจาง */
+      padding: 5px 10px;
+      border-radius: 10px;
+      /* ค่อยๆ เปลี่ยนจากเหลี่ยมเป็นโค้ง */
+      background-color: white;
+    }
   </style>
 
 </head>
@@ -251,52 +284,68 @@
           <br>
       </div>
 
-    <div class="container1">
-      <div class="member-card">
-        <div class="btn2 content-box2">ขั้นตอนที่ 1</div>
-        <div class="member-name">เข้าเว็บไซต์รับสมัครเรียน</div>
-        <div class="member-info">เลือกระดับที่ต้องการสมัครเข้าเรียน เลือกคุณวุฒิที่จะใช้สมัครเรียน</div>
-        <a href="https://admissions.rmutsb.ac.th/web_admis/" target="_blank">
-          <button class="btn btn-primary btn-lg" type="button">ดูข้อมูลเพิ่มเติม</button>
-        </a>
-      </div>
+      <div class="container1">
+        <div class="member-card">
+          <div class="btn2 content-box2">ขั้นตอนที่ 1</div>
+          <div class="member-name">เข้าเว็บไซต์รับสมัครเรียน</div>
+          <div class="member-info">เลือกระดับที่ต้องการสมัครเข้าเรียน เลือกคุณวุฒิที่จะใช้สมัครเรียน</div>
+          <a href="https://admissions.rmutsb.ac.th/web_admis/" target="_blank">
+            <button class="btn btn-primary btn-lg" type="button">ดูข้อมูลเพิ่มเติม</button>
+          </a>
+        </div>
 
-      <div class="member-card">
-        <div class="btn2 content-box2">ขั้นตอนที่ 02</div>
-        <div class="member-name">กรอกเเบบฟอร์มการสมัครเรียน</div>
-        <div class="member-info">กรอกเเบบฟอร์มการสมัครเรียน กดปุ่มบันทึก เเละรอผลทางเว็บไซต์ที่สมัคร</div>
-      </div>
+        <div class="member-card">
+          <div class="btn2 content-box2">ขั้นตอนที่ 02</div>
+          <div class="member-name">กรอกเเบบฟอร์มการสมัครเรียน</div>
+          <div class="member-info">กรอกเเบบฟอร์มการสมัครเรียน กดปุ่มบันทึก เเละรอผลทางเว็บไซต์ที่สมัคร</div>
+        </div>
 
-      <div class="member-card">
-        <div class="btn2 content-box2">ขั้นตอนที่ 03</div>
-        <div class="member-name">ตรวจสอบสถานะ</div>
-        <div class="member-info">ตรวจสอบสถานะการสมัครเเละกรอกเเบบฟอร์มรายงานตัวผ่านเว็บไซต์</div>
-      </div>
+        <div class="member-card">
+          <div class="btn2 content-box2">ขั้นตอนที่ 03</div>
+          <div class="member-name">ตรวจสอบสถานะ</div>
+          <div class="member-info">ตรวจสอบสถานะการสมัครเเละกรอกเเบบฟอร์มรายงานตัวผ่านเว็บไซต์</div>
+        </div>
 
-      <div class="member-card">
-        <div class="btn2 content-box2">ขั้นตอนที่ 04</div>
-        <div class="member-name">พิมพ์เเบบรายงานตัว</div>
-        <div class="member-info">เมื่อนักศึกษาทำทุกขั้นตอนเรียบร้อยให้พิมพ์ใบรายงานตัวพร้อมใบ Payin
-          ชำระเงินผ่านช่องทางที่มหาวิทยาลัยกำหนด เเล้วส่งเอกสารรายงานตัวให้มหาวิทยาลัย</div>
-      </div>
+        <div class="member-card">
+          <div class="btn2 content-box2">ขั้นตอนที่ 04</div>
+          <div class="member-name">พิมพ์เเบบรายงานตัว</div>
+          <div class="member-info">เมื่อนักศึกษาทำทุกขั้นตอนเรียบร้อยให้พิมพ์ใบรายงานตัวพร้อมใบ Payin
+            ชำระเงินผ่านช่องทางที่มหาวิทยาลัยกำหนด เเล้วส่งเอกสารรายงานตัวให้มหาวิทยาลัย</div>
+        </div>
 
-      <div class="member-card">
-        <div class="btn2 content-box2">ขั้นตอนที่ 05</div>
-        <div class="member-name">ดาวน์โหลดคู่มือการสมัครเพิ่มเติม</div>
-        <div class="member-info">ถ้านักศึกษายังไม่เข้าใจขั้นตอนการสมัครเรียนสามารถ
-          คลิกดาวน์โหลดคู่มือการสมัครเพิ่มเติม</div>
+        <div class="member-card">
+          <div class="btn2 content-box2">ขั้นตอนที่ 05</div>
+          <div class="member-name">ดาวน์โหลดคู่มือการสมัครเพิ่มเติม</div>
+          <div class="member-info">ถ้านักศึกษายังไม่เข้าใจขั้นตอนการสมัครเรียนสามารถ
+            คลิกดาวน์โหลดคู่มือการสมัครเพิ่มเติม</div>
+        </div>
       </div>
-    </div>
-
-    <br>
-    <br>
+      <br>
+      <br>
   </body>
 </div>
-<br>
-<br>
 </main>
 
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<div class="container">
+  <footer class="footer">
+    <div class="footer-item">© 2025 สาขาวิชาเทคโนโลยีมัลติมีเดีย มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ</div>
+  </footer>
+</div>
+
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js">
+
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("mouseenter", function () {
+      this.style.borderRadius = "10px"; // ค่อยๆ ทำให้โค้งมน
+    });
+    link.addEventListener("mouseleave", function () {
+      this.style.borderRadius = "5px"; // กลับไปเป็นเหลี่ยมเล็กน้อย
+    });
+  });
+
+
+</script>
 
 </body>
 
