@@ -25,14 +25,14 @@
       font-family: "Itim", serif;
     }
 
-    /* สำหรับหน้านี้โดยเฉพาะ แยกจากตัวหลัก */
     .container1 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      flex-direction: column;
+      /* เรียงแนวตั้ง */
       gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-      font-size: 34px;
+      /* เพิ่มระยะห่างระหว่างกล่อง */
+      align-items: center;
+      /* จัดให้อยู่ตรงกลาง */
     }
 
     .container2 {
@@ -45,12 +45,15 @@
     }
 
     .member-card {
-      background-color: white;
-      font-family: "Itim", serif;
-      border-radius: 15px;
-      padding: 30px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: left;
+      width: 60%;
+      /* กำหนดความกว้างให้พอดี */
+      max-width: 1250px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding-top: 2rem;
     }
 
     .member-card img {
@@ -63,12 +66,14 @@
     .member-name {
       font-size: 1.7rem;
       font-weight: bold;
+      padding-top: 20px;
     }
 
     .member-info {
       font-size: 1.2rem;
       color: #555;
       margin-bottom: 10px;
+      padding-top: 10px;
     }
 
     .btn {
@@ -202,72 +207,56 @@
       <div class="collapse navbar-collapse" id="navbarsExample09">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="หลักสูตร.html">หลักสูตร</a>
+            <a class="nav-link" aria-disabled="true" href="หน้าหลัก.html">หน้าหลัก</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="อาจารย์.html">อาจารย์</a>
+            <a class="nav-link" aria-disabled="true" href="หลักสูตร.html">หลักสูตร</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true" href="อาจารย์.html">อาจารย์</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-disabled="true" href="กิจกรรมสาขา.html">กิจกรรมสาขา</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-disabled="true" href="สมัครเรียน.html">สมัครเรียน</a>
+            <a class="nav-link active" aria-current="page" href="สมัครเรียน.html">สมัครเรียน</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-disabled="true" href="ติดต่อ.html">ติดต่อ</a>
           </li>
-          <!--<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-              aria-expanded="false">ข้อมูลเพิ่มเติม</a>-->
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="https://arit.rmutsb.ac.th/content/406"></a></li>
           </ul>
           </li>
         </ul>
-        <form role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        </form>
       </div>
     </div>
   </nav>
 
-  <br>
-
   <body>
-    <!--
-        <div class="container py-4">
-          <header class="pb-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
-              <span class="fs-4"></span>
-            </a>
+
+    <main>
+      <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+            <span class="fs-4"></span>
+          </a>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <a href="#">
-                <img src="BannerT4.png" class="d-block w-100" alt="First slide">
+                <img src="r1.png" class="d-block w-100" alt="First slide">
               </a>
             </div>
           </div>
           <br>
-        </div>
-      -->
-
-    <div class="content-box">
-      <!-- ส่วนข้อความ -->
-      <div class="text-section">
-        <h2>วิธีการสมัครเรียน</h2>
-        <p>
-          สามารถทำตามขั้นตอนด้านล่างนี้ได้เลย
-        </p>
       </div>
-    </div>
-    <br>
 
     <div class="container1">
       <div class="member-card">
         <div class="btn2 content-box2">ขั้นตอนที่ 1</div>
         <div class="member-name">เข้าเว็บไซต์รับสมัครเรียน</div>
         <div class="member-info">เลือกระดับที่ต้องการสมัครเข้าเรียน เลือกคุณวุฒิที่จะใช้สมัครเรียน</div>
-        <a href="https://admissions.rmutsb.ac.th/web_admis/">
+        <a href="https://admissions.rmutsb.ac.th/web_admis/" target="_blank">
           <button class="btn btn-primary btn-lg" type="button">ดูข้อมูลเพิ่มเติม</button>
         </a>
       </div>
@@ -297,8 +286,10 @@
         <div class="member-info">ถ้านักศึกษายังไม่เข้าใจขั้นตอนการสมัครเรียนสามารถ
           คลิกดาวน์โหลดคู่มือการสมัครเพิ่มเติม</div>
       </div>
-      <br>
-      <br>
+    </div>
+
+    <br>
+    <br>
   </body>
 </div>
 <br>

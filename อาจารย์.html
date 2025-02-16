@@ -56,6 +56,13 @@
       aspect-ratio: 1 / 1;
       object-fit: cover;
       border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .member-card img:hover {
+      transform: translateY(-10px); /* ทำให้ภาพลอยขึ้น 10px */
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ดูนูนขึ้น */
     }
 
     .member-name {
@@ -200,10 +207,13 @@
       <div class="collapse navbar-collapse" id="navbarsExample09">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="หลักสูตร.html">หลักสูตร</a>
+            <a class="nav-link" aria-disabled="true" href="หน้าหลัก.html">หน้าหลัก</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="อาจารย์.html">อาจารย์</a>
+            <a class="nav-link" aria-disabled="true" href="หลักสูตร.html">หลักสูตร</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="อาจารย์.html">อาจารย์</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-disabled="true" href="กิจกรรมสาขา.html">กิจกรรมสาขา</a>
@@ -222,9 +232,6 @@
           </ul>
           </li>
         </ul>
-        <form role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        </form>
       </div>
     </div>
   </nav>
@@ -249,9 +256,8 @@
         <img src="p1.png" alt="Member 1">
         <div class="member-name">ผศ.ดร.ณพงศ์ วรรณพิรุณ</div>
         <div class="member-info">ตำแหน่ง อาจารย์ประจำหลักสูตร</div>
-        <a
-          href="https://sci.rmutsb.ac.th/2024/12/23/%E0%B8%9C%E0%B8%A8-%E0%B8%94%E0%B8%A3-%E0%B8%AA%E0%B8%A3%E0%B8%8A%E0%B8%B1%E0%B8%A2-%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B9%E0%B8%A3/">
-          <button class="btn">ดูข้อมูลเพิ่มเติม</button>
+        <a href="https://sci.rmutsb.ac.th/2024/12/23/%e0%b8%9c%e0%b8%a8-%e0%b8%94%e0%b8%a3-%e0%b8%93%e0%b8%9e%e0%b8%87%e0%b8%a8%e0%b9%8c-%e0%b8%a7%e0%b8%a3%e0%b8%a3%e0%b8%93%e0%b8%9e%e0%b8%b4%e0%b8%a3%e0%b8%b8%e0%b8%93/" target="_blank">
+          <button class="btn">ดูข้อมูล E-Profile</button>
         </a>
       </div>
 
@@ -259,9 +265,8 @@
         <img src="p2.png" alt="Member 2">
         <div class="member-name">ผศ.ดร.สรชัย ชวรางกูร</div>
         <div class="member-info">ตำแหน่ง อาจารย์ประจำหลักสูตร</div>
-        <a
-          href="https://sci.rmutsb.ac.th/2024/12/23/%e0%b8%9c%e0%b8%a8-%e0%b8%94%e0%b8%a3-%e0%b8%aa%e0%b8%a3%e0%b8%8a%e0%b8%b1%e0%b8%a2-%e0%b8%8a%e0%b8%a7%e0%b8%a3%e0%b8%b2%e0%b8%87%e0%b8%81%e0%b8%b9%e0%b8%a3/">
-          <button class="btn">ดูข้อมูลเพิ่มเติม</button>
+        <a href="https://sci.rmutsb.ac.th/2024/12/23/%e0%b8%9c%e0%b8%a8-%e0%b8%94%e0%b8%a3-%e0%b8%aa%e0%b8%a3%e0%b8%8a%e0%b8%b1%e0%b8%a2-%e0%b8%8a%e0%b8%a7%e0%b8%a3%e0%b8%b2%e0%b8%87%e0%b8%81%e0%b8%b9%e0%b8%a3/" target="_blank">
+          <button class="btn">ดูข้อมูล E-Profile</button>
         </a>
       </div>
 
@@ -269,39 +274,36 @@
         <img src="p3.png" alt="Member 3">
         <div class="member-name">ผศ.อธิษฐ์ คู่เจริญถาวร</div>
         <div class="member-info">ตำแหน่ง อาจารย์ประจำหลักสูตร</div>
-        <a
-          href="https://sci.rmutsb.ac.th/2024/12/23/%e0%b8%9c%e0%b8%a8-%e0%b8%ad%e0%b8%98%e0%b8%b4%e0%b8%a9%e0%b8%90%e0%b9%8c-%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b9%80%e0%b8%88%e0%b8%a3%e0%b8%b4%e0%b8%8d%e0%b8%96%e0%b8%b2%e0%b8%a7%e0%b8%a3/">
-          <button class="btn">ดูข้อมูลเพิ่มเติม</button>
+        <a href="https://sci.rmutsb.ac.th/2024/12/23/%e0%b8%9c%e0%b8%a8-%e0%b8%ad%e0%b8%98%e0%b8%b4%e0%b8%a9%e0%b8%90%e0%b9%8c-%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b9%80%e0%b8%88%e0%b8%a3%e0%b8%b4%e0%b8%8d%e0%b8%96%e0%b8%b2%e0%b8%a7%e0%b8%a3/" target="_blank"> 
+          <button class="btn">ดูข้อมูล E-Profile</button>
         </a>
       </div>
 
       <div class="member-card">
-        <img src="p4.png" alt="Member 4">
-        <div class="member-name">อาจารย์สุนทรี แก่นแก้ว
-        </div>
-        <div class="member-info">ตำแหน่ง อาจารย์พิเศษ</div>
-        <a
-          href="https://sci.rmutsb.ac.th/2024/12/23/%e0%b8%ad%e0%b8%b2%e0%b8%88%e0%b8%b2%e0%b8%a3%e0%b8%a2%e0%b9%8c%e0%b8%aa%e0%b8%b8%e0%b8%99%e0%b8%97%e0%b8%a3%e0%b8%b5-%e0%b9%81%e0%b8%81%e0%b9%88%e0%b8%99%e0%b9%81%e0%b8%81%e0%b9%89%e0%b8%a7/">
-          <button class="btn">ดูข้อมูลเพิ่มเติม</button>
-        </a>
-      </div>
-
-      <div class="member-card">
-        <img src="p5.png" alt="Member 5">
-        <div class="member-name">ดร.ศิวพร ลินทะลึก</div>
-        <div class="member-info">ตำแหน่ง อาจารย์พิเศษ</div>
-        <a href="https://sites.google.com/view/web-technology-and-design/instructor?authuser=0">
-          <button class="btn">ดูข้อมูลเพิ่มเติม</button>
-        </a>
-      </div>
-
-      <div class="member-card">
-        <img src="p6.png" alt="Member 3">
+        <img src="p6.png" alt="Member 4">
         <div class="member-name">ผศ.ชัชฎา ชวรางกูร</div>
         <div class="member-info">ตำแหน่ง อาจารย์ประจำหลักสูตร</div>
+        <a href="https://sci.rmutsb.ac.th/2024/12/23/%E0%B8%9C%E0%B8%8A-%E0%B8%8A%E0%B8%B1%E0%B8%8A%E0%B8%8E%E0%B8%B2-%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B9%E0%B8%A3/" target="_blank">
+          <button class="btn">ดูข้อมูล E-Profile</button>
+        </a>
+      </div>
+
+      <div class="member-card">
+        <img src="p4.png" alt="Member 5">
+        <div class="member-name">อาจารย์สุนทรี แก่นแก้ว</div>
+        <div class="member-info">ตำแหน่ง อาจารย์พิเศษ</div>
         <a
-          href="https://sci.rmutsb.ac.th/2024/12/23/%E0%B8%9C%E0%B8%8A-%E0%B8%8A%E0%B8%B1%E0%B8%8A%E0%B8%8E%E0%B8%B2-%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B9%E0%B8%A3/">
-          <button class="btn">ดูข้อมูลเพิ่มเติม</button>
+          href="https://sci.rmutsb.ac.th/2024/12/23/%e0%b8%ad%e0%b8%b2%e0%b8%88%e0%b8%b2%e0%b8%a3%e0%b8%a2%e0%b9%8c%e0%b8%aa%e0%b8%b8%e0%b8%99%e0%b8%97%e0%b8%a3%e0%b8%b5-%e0%b9%81%e0%b8%81%e0%b9%88%e0%b8%99%e0%b9%81%e0%b8%81%e0%b9%89%e0%b8%a7/" target="_blank">
+          <button class="btn">ดูข้อมูล E-Profile</button>
+        </a>
+      </div>
+
+      <div class="member-card">
+        <img src="p5.png" alt="Member 6">
+        <div class="member-name">ดร.ศิวพร ลินทะลึก</div>
+        <div class="member-info">ตำแหน่ง อาจารย์พิเศษ</div>
+        <a href="https://sites.google.com/view/web-technology-and-design/instructor?authuser=0" target="_blank">
+          <button class="btn">ดูข้อมูล E-Profile</button>
         </a>
       </div>
 
@@ -309,9 +311,8 @@
         <img src="p7.png" alt="Member 6">
         <div class="member-name">อาจารย์พงฐฉัตร เนียมทรง</div>
         <div class="member-info">ตำแหน่ง อาจารย์พิเศษ</div>
-        <a
-          href="https://sci.rmutsb.ac.th/2024/12/23/%E0%B8%AD%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B9%8C%E0%B8%9E%E0%B8%87%E0%B8%90%E0%B8%89%E0%B8%B1%E0%B8%95%E0%B8%A3-%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%97%E0%B8%A3%E0%B8%87/">
-          <button class="btn">ดูข้อมูลเพิ่มเติม</button>
+        <a href="https://sci.rmutsb.ac.th/2024/12/23/%E0%B8%AD%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B9%8C%E0%B8%9E%E0%B8%87%E0%B8%90%E0%B8%89%E0%B8%B1%E0%B8%95%E0%B8%A3-%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%97%E0%B8%A3%E0%B8%87/" target="_blank">
+          <button class="btn">ดูข้อมูล E-Profile</button>
         </a>
       </div>
 
@@ -319,10 +320,9 @@
         <img src="p8.png" alt="Member 7">
         <div class="member-name">อาจารยศรัณย์ จุลอำพันธ์
         </div>
-        <div class="member-info">ตำแหน่ง อาจารย์ประจำหลักสูตร</div>
-        <a
-          href="https://sci.rmutsb.ac.th/2024/12/23/%e0%b8%ad%e0%b8%b2%e0%b8%88%e0%b8%b2%e0%b8%a3%e0%b8%a2%e0%b9%8c%e0%b8%aa%e0%b8%b8%e0%b8%99%e0%b8%97%e0%b8%a3%e0%b8%b5-%e0%b9%81%e0%b8%81%e0%b9%88%e0%b8%99%e0%b9%81%e0%b8%81%e0%b9%89%e0%b8%a7/">
-          <button class="btn">ดูข้อมูลเพิ่มเติม</button>
+        <div class="member-info">ตำแหน่ง อาจารย์พิเศษ</div>
+        <a href="https://sci.rmutsb.ac.th/2024/12/23/%e0%b8%ad%e0%b8%b2%e0%b8%88%e0%b8%b2%e0%b8%a3%e0%b8%a2%e0%b9%8c%e0%b8%aa%e0%b8%b8%e0%b8%99%e0%b8%97%e0%b8%a3%e0%b8%b5-%e0%b9%81%e0%b8%81%e0%b9%88%e0%b8%99%e0%b9%81%e0%b8%81%e0%b9%89%e0%b8%a7/" target="_blank">
+          <button class="btn">ดูข้อมูล E-Profile</button>
         </a>
       </div>
       <br>

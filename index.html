@@ -34,6 +34,13 @@
       aspect-ratio: 1 / 1;
       object-fit: cover;
       border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .member-card img:hover {
+      transform: translateY(-10px); /* ทำให้ภาพลอยขึ้น 10px */
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ดูนูนขึ้น */
     }
 
     .btn {
@@ -115,10 +122,13 @@
       <div class="collapse navbar-collapse" id="navbarsExample09">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="หลักสูตร.html">หลักสูตร</a>
+            <a class="nav-link active" aria-current="page" href="หน้าหลัก.html">หน้าหลัก</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="อาจารย์.html">อาจารย์</a>
+            <a class="nav-link" aria-disabled="ture" href="หลักสูตร.html">หลักสูตร</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true" href="อาจารย์.html">อาจารย์</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-disabled="true" href="กิจกรรมสาขา.html">กิจกรรมสาขา</a>
@@ -137,9 +147,6 @@
           </ul>
           </li>
         </ul>
-        <form role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        </form>
       </div>
     </div>
   </nav>
@@ -167,7 +174,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <a href="#">
-                <img src="b1.png" class="d-block w-100" alt="First slide">
+                <img src="c1.png" class="d-block w-100" alt="First slide">
                 <div class="container">
                   <div class="carousel-caption text-start"></div>
                 </div>
@@ -176,23 +183,22 @@
 
             <div class="carousel-item">
               <a href="#">
-                <img src="b2.png" class="d-block w-100" alt="Second slide">
+                <img src="c2.png" class="d-block w-100" alt="Second slide">
               </a>
             </div>
 
             <div class="carousel-item">
               <a href="#">
-                <img src="b3.png" class="d-block w-100" alt="Third slide">
+                <img src="c3.png" class="d-block w-100" alt="Third slide">
               </a>
             </div>
 
             <div class="carousel-item">
               <a href="#">
-                <img src="b4.png" class="d-block w-100" alt="Third slide">
+                <img src="c4.png" class="d-block w-100" alt="Third slide">
               </a>
             </div>
           </div>
-
 
 
           <!-- ปุ่มเลื่อนซ้าย-ขวา -->
@@ -210,15 +216,15 @@
 
     <div class="container-fluid py-5">
       <div class="p-5 mb-4 border rounded-3">
-        <h1 class="display-5 fw-bold">คณะวิทยาศาสตร์และเทคโนโลยี</h1>
+        <h1 class="display-5 fw-bold">สาขาวิชาเทคโนโลยีมัลติมีเดีย MMT</h1>
         <div class="member-card">
           <img src="b9.1.png" alt="b9">
         </div>
-        <p class="col-md-8 fs-4">สาขาวิชามัลติมีเดีย หลักสูตรปริญญาตรี
+        <p class="col-md-8 fs-4">คณะวิทยาศาสตร์และเทคโนโลยี หลักสูตรปริญญาตรี 4 ปี <br>
           มุ่งเน้นการพัฒนานักศึกษาให้มีความเชี่ยวชาญด้านการสร้างสรรค์
-          และออกแบบสื่อมัลติมีเดียในยุคดิจิทัลด้วยการเรียนรู้เทคโนโลยีที่ทันสมัย เช่น การออกแบบกราฟิก
+          และการออกแบบสื่อมัลติมีเดียในยุคดิจิทัลด้วยการเรียนรู้เทคโนโลยีที่ทันสมัย เช่น การออกแบบกราฟิก
           การสร้างภาพเคลื่อนไหว เป็นต้น</p>
-        <a href="หลักสูตร.html">
+        <a href="หลักสูตร.html" target="_blank">
           <button class="btn btn-primary btn-lg" type="button">ดูข้อมูลเพิ่มเติม</button>
         </a>
       </div>
@@ -233,7 +239,7 @@
         <p class="col-md-8 fs-4">สาขาวิชามัลติมีเดีย เปิดโอกาสให้นักศึกษาได้แสดงความสามารถ ไอเดีย
           และความคิดสร้างสรรค์ ผ่านงานประกวดต่างๆ
           ที่ทางสาขาได้ไปเฟ้นหามาให้นักศึกษาโดยเฉพาะ</p>
-        <a href="กิจกรรมสาขา.html">
+        <a href="กิจกรรมสาขา.html" target="_blank">
           <button class="btn btn-primary btn-lg" type="button">ดูข้อมูลเพิ่มเติม</button>
         </a>
       </div>
@@ -255,21 +261,21 @@
       </div>
 
 
-      <div class="col-md-6">
+      <div class= "col-md-6">
         <div class="h-100 p-5 border rounded-3">
           <h2>ช่องทางโซเชียลมีเดียสาขา MMT</h2>
           <!-- Facebook Icon -->
-          <a href="https://www.facebook.com/MMT.RUS/" class="icon-box">
+          <a href="https://www.facebook.com/MMT.RUS/" class="icon-box" target="_blank">
             <img src="Facebook1.png" style="width: 15rem;" class="social-icon" alt="Facebook Logo">
           </a>
           <br>
           <!-- YouTube Icon -->
-          <a href="https://www.youtube.com/channel/UClM8qn2QhlC3q6EiVznQ9JA" class="icon-box">
+          <a href="https://www.youtube.com/channel/UClM8qn2QhlC3q6EiVznQ9JA" class="icon-box" target="_blank">
             <img src="Youtube1.png" style="width: 15rem;" class="social-icon" alt="YouTube Logo">
           </a>
           <br>
           <!-- TikTok Icon -->
-          <a href="https://www.tiktok.com/@mmt_rus" class="icon-box">
+          <a href="https://www.tiktok.com/@mmt_rus" class="icon-box" target="_blank">
             <img src="TikTok1.png" style="width: 15rem;" class="social-icon" alt="Facebook Logo">
           </a>
           <br>
